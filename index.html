@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1175px)" href="css/phone.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Best online Food Delivery services in India | MyonlineMeal.com</title>
+</head>
+<body>
+
+    <div id="splash-screen">
+        <img src="logo.jpg" alt="Logo" id="splash-logo">
+    </div>
+
+    <div id="main-content" style="display: none;">
+
+    <nav id="navbar">
+        
+        <!-- Hamburger Menu Icon -->
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+    
+        <!-- Navbar Links -->
+        <ul id="nav-links">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-section">Services</a></li>
+            <li class="item"><a href="#client-section">About Us</a></li>
+            <li class="item"><a href="#Contact">Contact Us</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+    </nav>
+            
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyonlineMeal</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis facilis blanditiis quidem debitis, facere incidunt, magni eaque quia, officiis ratione.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <button class="btn" onclick="window.location.href='login.html'">Order Now</button>
+
+    </section>
+
+    <section id="services-section" class="Services-container">
+        <h1 class="h-primary center">Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="pizza" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore, necessitatibus enim blanditiis hic explicabo ipsam aliquam tempora distinctio praesentium deserunt nisi expedita tenetur optio corrupti ipsa esse placeat! Laboriosam!</p>
+
+            </div>
+            <div class="box">
+                <img src="bulk" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore, necessitatibus enim blanditiis hic explicabo ipsam aliquam tempora distinctio praesentium deserunt nisi expedita tenetur optio corrupti ipsa esse placeat! Laboriosam!</p>
+
+            </div>
+
+            <div class="box">
+                <img src="food ordring" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex labore, necessitatibus enim blanditiis hic explicabo ipsam aliquam tempora distinctio praesentium deserunt nisi expedita tenetur optio corrupti ipsa esse placeat! Laboriosam!</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1><br><br>
+        <div id="clients">
+            <img src="apple" alt="our client">
+        </div>
+        <div id="clients">
+            <img src="microsoft" alt="our client">
+        </div>
+        <div id="clients">
+            <img src="skype.jpeg" alt="our client">
+        </div>
+        <div id="clients">
+            <img src="hp" alt="our client">
+        </div>
+        
+
+        
+    </section> 
+<hr>
+<br><br>
+<section id="Contact">
+    <h1 class="h-primary center">Contact us</h1>
+    <div class="contact-container">
+
+    <div id="contact-box">
+        <form id="contactForm" action="display.html" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button class="btn1" type="submit">Contact us</button>
+            
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58956.92665861557!2d72.90344840782934!3d22.54886713205604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e7efd0c8885%3A0xa9a0b93c0c4b5215!2sAnand%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1724849429930!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+    </div>
+    </div>
+    
+</section>
+
+
+
+
+    <footer class="center">
+        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

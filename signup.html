@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <header>
+                <h1>Registration</h1>
+            </header>
+            <form id="registerForm">
+                <input type="text" id="nameField" placeholder="Full Name" required>
+                <input type="email" id="emailField" placeholder="Enter your email address" required>
+                <input type="tel" id="phoneField" placeholder="Phone Number" required>
+                <input type="password" id="passwordField" placeholder="Enter your password" minlength="6" required>
+                <input type="password" placeholder="Confirm your password" id="confirmPasswordField" required>
+
+                <label for="role">Register as:</label>
+                <select id="role" required>
+                    <option value="">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="customer">Customer</option>
+                </select>
+
+                <!-- Dynamic sections for Student, Professional, and Customer -->
+                <div id="studentSection" style="display: none;">
+                    <h3>Student Information</h3>
+                    <input type="text" id="schoolField" placeholder="School Name">
+                    <input type="text" id="gradeField" placeholder="Grade">
+                    <input type="text" id="majorField" placeholder="Major (if applicable)">
+                    <label for="countryStudent">Country:</label>
+                    <select id="countryStudent">
+                        <option value="">Select your country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+
+                <div id="professionalSection" style="display: none;">
+                    <h3>Professional Information</h3>
+                    <input type="text" id="companyField" placeholder="Company Name">
+                    <input type="text" id="jobTitleField" placeholder="Job Title">
+                    <input type="text" id="experienceField" placeholder="Years of Experience">
+                    <label for="countryProfessional">Country:</label>
+                    <select id="countryProfessional">
+                        <option value="">Select your country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+
+                <div id="customerSection" style="display: none;">
+                    <h3>Customer Information</h3>
+                    <input type="text" id="addressField" placeholder="Street Address" required>
+                    <input type="text" id="cityField" placeholder="City" required>
+                    <input type="text" id="postalCodeField" placeholder="Postal/ZIP Code" required>
+                    <label for="countryCustomer">Country:</label>
+                    <select id="countryCustomer">
+                        <option value="">Select your country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+
+                <input type="submit" value="Register" id="registerBtn">
+
+                <div class="links">
+                    <a href="#"><img src="fb" alt="Facebook"></a>
+                    <a href="#"><img src="google" alt="Google"></a>
+                    <a href="#"><img src="twitter" alt="Twitter"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

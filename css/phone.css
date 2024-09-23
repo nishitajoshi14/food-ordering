@@ -1,0 +1,151 @@
+/* Hide checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Hamburger Menu Icon */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Default navbar style for larger screens */
+#navbar ul {
+    display: flex;
+}
+
+.auth-buttons{
+    right: 50px;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 1175px) {
+    /* Show hamburger menu icon */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    /* Hide menu by default */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: var(--navbar-height);
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu-checkbox:checked + .menu-btn + #nav-links {
+        display: flex;
+    }
+
+    /* Adjust menu items for mobile view */
+    #nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #nav-links li a {
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    
+    #nav-links li a:hover {
+        background-color: #444;
+    }
+}
+
+
+
+#home {
+    padding: 50px 20px;
+    height: auto;
+}
+
+#home h1 {
+    font-size: 2rem;
+}
+
+#home p {
+    font-size: 14px;
+}
+
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 90px;
+    display: block;
+}
+
+#clients {
+    flex-wrap: wrap;
+}
+
+#clients img {
+    width: 60px;
+    padding: 20px;
+}
+
+#contact-box {
+    padding: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+}
+
+.footer {
+    font-size: 14px;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 1175px) {
+    #navbar ul {
+        position: absolute;
+        top: var(--navbar-height);
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-checkbox:checked + .menu-btn + ul {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+
+

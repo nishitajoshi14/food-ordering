@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1175px)" href="css/phone.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bree+Serif&display=swap" rel="stylesheet">
+    
+    <title>Menu</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul id="nav-links">
+            <li class="item"><a href="index.html#home">Home</a></li>
+            <li class="item"><a href="index.html#services-section">Services</a></li>
+            <li class="item"><a href="index.html#client-section">About Us</a></li>
+            <li class="item"><a href="index.html#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="menu">
+        <h1 id="section"> Food Menu</h1>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for dishes...">
+            <button id="search-button">Search</button>
+        </div>
+    
+        <div id="category-buttons">
+            <button class="category-btn" data-category="breakfast">Breakfast</button>
+            <button class="category-btn" data-category="lunch">Lunch</button>
+            <button class="category-btn" data-category="dinner">Dinner</button>
+            <button class="category-btn" data-category="appetizers">Appetizers</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+            <button class="category-btn" data-category="beverages">Beverages</button>
+        </div>
+        
+        
+        <!-- Breakfast items -->
+<div id="breakfast" class="menu_col category breakfast" style="display: none;">
+    <h2 class="category-title">Breakfast</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="breakfast.jpg" alt="Tasty Dish 01">
+            </div>
+            <div class="description">
+                <h3>Tasty Dish 01</h3>
+                <h4>100rs</h4>
+                <button class="add-to-cart" data-name="Tasty Dish 01" data-price="100">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Dosa" alt="Dosa">
+            </div>
+            <div class="description">
+                <h3>Dosa</h3>
+                <h4>100rs</h4>
+                <button class="add-to-cart" data-name="Dosa" data-price="100">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="sandwitch" alt="Sandwich">
+            </div>
+            <div class="description">
+                <h3>Sandwich</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Sandwich" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="pancakes.jpg" alt="Pancakes">
+            </div>
+            <div class="description">
+                <h3>Pancakes</h3>
+                <h4>120rs</h4>
+                <button class="add-to-cart" data-name="Pancakes" data-price="120">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="omelette.jpg" alt="Omelette">
+            </div>
+            <div class="description">
+                <h3>Omelette</h3>
+                <h4>80rs</h4>
+                <button class="add-to-cart" data-name="Omelette" data-price="80">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="idli.jpg" alt="Idli">
+            </div>
+            <div class="description">
+                <h3>Idli</h3>
+                <h4>50rs</h4>
+                <button class="add-to-cart" data-name="Idli" data-price="50">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="paratha.jpg" alt="Paratha">
+            </div>
+            <div class="description">
+                <h3>Paratha</h3>
+                <h4>90rs</h4>
+                <button class="add-to-cart" data-name="Paratha" data-price="90">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="poha.jpg" alt="Poha">
+            </div>
+            <div class="description">
+                <h3>Poha</h3>
+                <h4>70rs</h4>
+                <button class="add-to-cart" data-name="Poha" data-price="70">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="upma.jpg" alt="Upma">
+            </div>
+            <div class="description">
+                <h3>Upma</h3>
+                <h4>60rs</h4>
+                <button class="add-to-cart" data-name="Upma" data-price="60">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+            
+
+<div id="lunch" class="menu_col category lunch" style="display: none;">
+    <h2 class="category-title">Lunch</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Rice paper rolls" alt="Rice paper rolls">
+            </div>
+            <div class="description">
+                <h3>Rice paper rolls</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Rice paper rolls" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Biryani.jpeg" alt="Biryani">
+            </div>
+            <div class="description">
+                <h3>Biryani</h3>
+                <h4>200rs</h4>
+                <button class="add-to-cart" data-name="Biryani" data-price="200">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Noodles.jpg" alt="Noodles">
+            </div>
+            <div class="description">
+                <h3>Noodles</h3>
+                <h4>120rs</h4>
+                <button class="add-to-cart" data-name="Noodles" data-price="120">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Paneer Curry.jpg" alt="Paneer Curry">
+            </div>
+            <div class="description">
+                <h3>Paneer Curry</h3>
+                <h4>180rs</h4>
+                <button class="add-to-cart" data-name="Paneer Curry" data-price="180">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Potato masala" alt="Potato masala">
+            </div>
+            <div class="description">
+                <h3>Potato masala</h3>
+                <h4>250rs</h4>
+                <button class="add-to-cart" data-name="Potato masala" data-price="250">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Salad.jpg" alt="Salad">
+            </div>
+            <div class="description">
+                <h3>Salad</h3>
+                <h4>100rs</h4>
+                <button class="add-to-cart" data-name="Salad" data-price="100">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Roti Sabzi.jpg" alt="Roti Sabzi">
+            </div>
+            <div class="description">
+                <h3>Roti Sabzi</h3>
+                <h4>80rs</h4>
+                <button class="add-to-cart" data-name="Roti Sabzi" data-price="80">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Mango Rice Recipe" alt="Mango Rice">
+            </div>
+            <div class="description">
+                <h3>Mango Rice</h3>
+                <h4>300rs</h4>
+                <button class="add-to-cart" data-name="Mango Rice" data-price="300">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Rice Bowl.jpeg" alt="Rice Bowl">
+            </div>
+            <div class="description">
+                <h3>Rice Bowl</h3>
+                <h4>130rs</h4>
+                <button class="add-to-cart" data-name="Rice Bowl" data-price="130">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Dinner items -->
+<div id="dinner" class="menu_col category dinner" style="display: none;">
+    <h2 class="category-title">Dinner</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="4Indian chana masala.jpeg" alt="Indian chana masala">
+            </div>
+            <div class="description">
+                <h3>Indian chana masala</h3>
+                <h4>200rs</h4>
+                <button class="add-to-cart" data-name="Indian chana masala" data-price="200">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Pasta.jpg" alt="Pasta">
+            </div>
+            <div class="description">
+                <h3>Pasta</h3>
+                <h4>180rs</h4>
+                <button class="add-to-cart" data-name="Pasta" data-price="180">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Roasted cauliflower dhal" alt="Roasted cauliflower dhal">
+            </div>
+            <div class="description">
+                <h3>Roasted cauliflower dhal</h3>
+                <h4>250rs</h4>
+                <button class="add-to-cart" data-name="Roasted cauliflower dhal" data-price="250">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="paneer-tikka.jpg" alt="paneer tikka">
+            </div>
+            <div class="description">
+                <h3>paneer tikka</h3>
+                <h4>350rs</h4>
+                <button class="add-to-cart" data-name="paneer tikka" data-price="350">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="pizza" alt="Pizza">
+            </div>
+            <div class="description">
+                <h3>Pizza</h3>
+                <h4>220rs</h4>
+                <button class="add-to-cart" data-name="Pizza" data-price="220">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Burger.jpeg" alt="Burger">
+            </div>
+            <div class="description">
+                <h3>Burger</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Burger" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Dal makhani.jpg" alt="Dal makhani">
+            </div>
+            <div class="description">
+                <h3>Dal makhani</h3>
+                <h4>280rs</h4>
+                <button class="add-to-cart" data-name="Dal makhani" data-price="280">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Manchurian.jpg" alt="manchurian">
+            </div>
+            <div class="description">
+                <h3>manchurian</h3>
+                <h4>320rs</h4>
+                <button class="add-to-cart" data-name="manchurian" data-price="320">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="naan.jpg" alt="Naan">
+            </div>
+            <div class="description">
+                <h3>Naan</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Naan" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- New Appetizers items -->
+<div id="appetizers" class="menu_col category appetizers" style="display: none;">
+    <h2 class="category-title">Appetizers</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Spring Rolls.jpg" alt="Spring Rolls">
+            </div>
+            <div class="description">
+                <h3>Spring Rolls</h3>
+                <h4>80rs</h4>
+                <button class="add-to-cart" data-name="Spring Rolls" data-price="80">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="bruschetta.jpg" alt="Bruschetta">
+            </div>
+            <div class="description">
+                <h3>Bruschetta</h3>
+                <h4>90rs</h4>
+                <button class="add-to-cart" data-name="Bruschetta" data-price="90">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="mozzarella_sticks.jpeg" alt="Mozzarella Sticks">
+            </div>
+            <div class="description">
+                <h3>Mozzarella Sticks</h3>
+                <h4>120rs</h4>
+                <button class="add-to-cart" data-name="Mozzarella Sticks" data-price="120">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="nachos.jpeg" alt="Nachos">
+            </div>
+            <div class="description">
+                <h3>Nachos</h3>
+                <h4>100rs</h4>
+                <button class="add-to-cart" data-name="Nachos" data-price="100">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="stuffed_mushrooms.jpg" alt="Stuffed Mushrooms">
+            </div>
+            <div class="description">
+                <h3>Stuffed Mushrooms</h3>
+                <h4>110rs</h4>
+                <button class="add-to-cart" data-name="Stuffed Mushrooms" data-price="110">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="pigs in a blanket.jpeg" alt="pigs in a blanket">
+            </div>
+            <div class="description">
+                <h3>pigs in a blanket</h3>
+                <h4>140rs</h4>
+                <button class="add-to-cart" data-name="pigs in a blanket" data-price="140">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Mini potato skins.jpeg" alt="Mini potato skins">
+            </div>
+            <div class="description">
+                <h3>Mini potato skins</h3>
+                <h4>130rs</h4>
+                <button class="add-to-cart" data-name="Mini potato skins" data-price="130">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="masala papad.jpg" alt="Masala papad">
+            </div>
+            <div class="description">
+                <h3>Masala papad</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Masala papad" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="garlic_bread.jpg" alt="Garlic Bread">
+            </div>
+            <div class="description">
+                <h3>Garlic Bread</h3>
+                <h4>70rs</h4>
+                <button class="add-to-cart" data-name="Garlic Bread" data-price="70">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Desserts items -->
+<div id="desserts" class="menu_col category desserts" style="display: none;">
+    <h2 class="category-title">Desserts</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="cheesecake.jpg" alt="Cheesecake">
+            </div>
+            <div class="description">
+                <h3>Cheesecake</h3>
+                <h4>200rs</h4>
+                <button class="add-to-cart" data-name="Cheesecake" data-price="200">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="brownies.jpeg" alt="Brownies">
+            </div>
+            <div class="description">
+                <h3>Brownies</h3>
+                <h4>180rs</h4>
+                <button class="add-to-cart" data-name="Brownies" data-price="180">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="ice cream.jpg" alt="Ice Cream">
+            </div>
+            <div class="description">
+                <h3>Ice Cream</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Ice Cream" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="apple_pie.jpeg" alt="Apple Pie">
+            </div>
+            <div class="description">
+                <h3>Apple Pie</h3>
+                <h4>170rs</h4>
+                <button class="add-to-cart" data-name="Apple Pie" data-price="170">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="tiramisu.jpg" alt="Tiramisu">
+            </div>
+            <div class="description">
+                <h3>Tiramisu</h3>
+                <h4>190rs</h4>
+                <button class="add-to-cart" data-name="Tiramisu" data-price="190">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="panna_cotta.jpg" alt="Panna Cotta">
+            </div>
+            <div class="description">
+                <h3>Panna Cotta</h3>
+                <h4>210rs</h4>
+                <button class="add-to-cart" data-name="Panna Cotta" data-price="210">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="cupcakes.webp" alt="Cupcakes">
+            </div>
+            <div class="description">
+                <h3>Cupcakes</h3>
+                <h4>160rs</h4>
+                <button class="add-to-cart" data-name="Cupcakes" data-price="160">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="gulab jamuns.jpg" alt="Gulab jamuns">
+            </div>
+            <div class="description">
+                <h3>Gulab jamuns</h3>
+                <h4>140rs</h4>
+                <button class="add-to-cart" data-name="Gulab jamuns" data-price="140">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="fruit_tart" alt="Fruit Tart">
+            </div>
+            <div class="description">
+                <h3>Fruit Tart</h3>
+                <h4>190rs</h4>
+                <button class="add-to-cart" data-name="Fruit Tart" data-price="190">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Beverages items -->
+<div id="beverages" class="menu_col category beverages" style="display: none;">
+    <h2 class="category-title">Beverages</h2>
+    
+    <!-- First Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Lassi.webp" alt="Lassi">
+            </div>
+            <div class="description">
+                <h3>Lassi</h3>
+                <h4>200rs</h4>
+                <button class="add-to-cart" data-name="Lassi" data-price="200">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Masala chai.jpg" alt="Brownies">
+            </div>
+            <div class="description">
+                <h3>Masala chai</h3>
+                <h4>50rs</h4>
+                <button class="add-to-cart" data-name="Masala chai" data-price="180">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Thandai.jpeg" alt="Thandai">
+            </div>
+            <div class="description">
+                <h3>Thandai</h3>
+                <h4>150rs</h4>
+                <button class="add-to-cart" data-name="Thandai" data-price="150">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Coffee.jpg" alt="Coffee">
+            </div>
+            <div class="description">
+                <h3>Coffee</h3>
+                <h4>170rs</h4>
+                <button class="add-to-cart" data-name="Coffee" data-price="170">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Watermelon juice.jpg" alt="Watermelon juice">
+            </div>
+            <div class="description">
+                <h3>Watermelon juice</h3>
+                <h4>190rs</h4>
+                <button class="add-to-cart" data-name="Watermelon juice" data-price="190">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="soft drinks.jpeg" alt="soft drinks">
+            </div>
+            <div class="description">
+                <h3>soft drinks</h3>
+                <h4>210rs</h4>
+                <button class="add-to-cart" data-name="soft drinks" data-price="210">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <div class="box">
+            <div class="image-container">
+                <img src="Beer.webp" alt="Beer">
+            </div>
+            <div class="description">
+                <h3>Beer</h3>
+                <h4>160rs</h4>
+                <button class="add-to-cart" data-name="Beer" data-price="160">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="blue mojito.jpg" alt="Blue mojito">
+            </div>
+            <div class="description">
+                <h3>Blue mojito</h3>
+                <h4>140rs</h4>
+                <button class="add-to-cart" data-name="Blue mojito" data-price="140">Add to Cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="Coconut water.avif" alt="Coconut water.">
+            </div>
+            <div class="description">
+                <h3>Coconut water</h3>
+                <h4>190rs</h4>
+                <button class="add-to-cart" data-name="Coconut water" data-price="190">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="cart-section">
+    <h2>Your Cart</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <p id="total-price"></p>
+    <button id="checkout-btn">Checkout</button>
+</div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

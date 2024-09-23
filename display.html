@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Form Data</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .edit-btn, .delete-btn, .save-btn {
+            padding: 5px 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .edit-btn {
+            background-color: blue;
+        }
+        .edit-btn:hover {
+            background-color: darkblue;
+        }
+        .delete-btn {
+            background-color: rgb(233, 81, 81);
+        }
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+        .save-btn {
+            background-color: green;
+        }
+        .save-btn:hover {
+            background-color: darkgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="display-data">
+        <h1 class="h-primary center">Submitted Form Data</h1>
+        <div id="data-container">
+            <!-- Data will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div id="checkout-container">
+        <h1>Checkout</h1>
+        
+        <a href="menu.html" id="back-btn">Back to Menu</a>
+
+        <!-- Order details will be shown in this table -->
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="order-details">
+                <!-- Order details will be dynamically inserted here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align: right;"><strong>Total:</strong></td>
+                    <td id="total-price"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button id="payment-btn">Proceed to Payment</button>
+
+        <div id="payment-options">
+            <h2>Select Payment Method</h2>
+            <button class="payment-option" data-method="gpay">G Pay</button>
+            <button class="payment-option" data-method="debitcard">Debit Card</button>
+            <button class="payment-option" data-method="atm">ATM</button>
+
+            <!-- Payment detail forms -->
+            <div id="gpay-details" class="payment-details-form">
+                <h3>G Pay Details</h3>
+
+                <label for="gpay-number">G Pay Number:</label>
+                <input type="text" id="gpay-number" placeholder="Enter G Pay Number">
+                <button class="submit-payment" data-method="gpay">Submit</button>
+                <button class="ok-btn">cancel</button>
+            </div>
+            <div id="debitcard-details" class="payment-details-form">
+                <h3>Debit Card Details</h3>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter Card Number">
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="CVV">
+                <button class="submit-payment" data-method="debitcard">Submit</button>
+                <button class="ok-btn">cancel</button>
+            </div>
+            <div id="atm-details" class="payment-details-form">
+                <h3>ATM Details</h3>
+                <label for="atm-number">ATM Card Number:</label>
+                <input type="text" id="atm-number" placeholder="Enter ATM Card Number">
+                <label for="atm-pin">PIN:</label>
+                <input type="text" id="atm-pin" placeholder="Enter PIN">
+                <button class="submit-payment" data-method="atm">Submit</button>
+                <button class="ok-btn">cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
